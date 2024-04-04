@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #79ae92;
+}
+
+header {
+    background-color: #1C5560;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+    color: #FBFFCD;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+header ul {
+    text-align: center;
+    list-style: none;
+}
+
+header button {
+    margin-top: 16px;
+    background-color: #001f36;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header button:hover {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+    display: none;
+}
+
+.yellow-box {
+    margin-top: 32px;
+    background-color: #fbffcd;
+    border-radius: 12px;
+    text-align: center;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.yellow-box input {
+    margin-top: 16px;
+    padding: 8px;
+    border: 1px solid #001f36;
+    border-radius: 12px;
+}
+
+.yellow-box button {
+    background-color: #1C5560;
+    color: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.yellow-box button:hover {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#btn-clear-list{
+    background-color: #FF5757;
+}
+
+.white-box {
+    margin-top: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.white-box ul {
+    margin-bottom: 10px;
+}
+
+.white-box ul li{
+    list-style: none;
+    padding: 4px;
+}
+
+.white-box button {
+    margin-top: 16px;
+    margin-left: 8px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit-activity:hover {
+    background-color: #79ae92;
+}
+
+.btn-delete-activity:hover {
+    background-color: #FF5757;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: #79ae92;
+    margin-top: 12px;
+    text-align: center;
+    font-size: smaller;
+}
+
+footer a {
+    text-decoration: none;
+    color: #001f36;
+}
+
+footer a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

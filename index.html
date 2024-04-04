@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <link rel="icon" href="./images/check-mark.png">
+    <title>To-do List</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>To-Do List</h1></li>
+            <button type="button">Open</button>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="yellow-box">
+                <form id="form">
+                    <input type="text" required placeholder="Activity Name" id="activity">
+                    <br>
+                    <button type="button" id="btn-clear-list">Clear List</button>
+                    <button type="submit">Add +</button>
+                </form>
+                <div class="white-box">
+                    <ul id="ul"></ul>
+                </div>
+                <button type="reset" id="btn-Close">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; Daniel Cardoso - <a href="https://daniel-cardoso-portifolio.vercel.app/" target="_blank">Learn More</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
