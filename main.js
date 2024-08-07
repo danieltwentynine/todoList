@@ -1,30 +1,36 @@
 $(document).ready(function(){
 
-    $('header button').click(function(){
-        $('.container').slideDown()
+    $('#btn-Open').click(function(){
+        $('main').slideDown()
     })
 
     $('#btn-Close').click(function(){
-        $('.container').slideUp()
-    })
-
-    $('form').on('submit', function(e){
-        e.preventDefault()
-
-        const newActivity = $('#activity').val()
-        const li = $('<li></li>')
-        const input = $('<input>', {type: 'checkbox', id: newActivity, value: newActivity})
-        const label = $('<label></label>', {for: newActivity, text: newActivity});
-
-        li.append(input, label)
-
-        $('#ul').append(li)
-        $('#activity').val('')
+        $('main').slideUp()
     })
 
     $('#btn-clear-list').click(function(){
         if (confirm("Are you sure you want to clear the list?")) {
-            $('#ul').empty()
+            $('#list').empty()
+        }
+    })
+
+    $('#addBtn').click(function() {
+
+        var inputValue = $('#input').val()
+
+        if (inputValue === '') {
+            alert("You must write something!")
+        } else {
+            var li = $('<li></li>').text(inputValue) //cria uma tag <li></li>
+            var span = $('<span class="close">\u00D7</span>') // mostrar o 'x' para deletar tarefa
+            li.append(span)
+            $('#list').append(li)
+            $('#input').val('') // Apagar o input
+
+            // Deletar a tarefa
+            span.click(function() {
+                li.remove()
+            })
         }
     })
 })
